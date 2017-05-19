@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require_relative('lib/itunes_commands')
+$LOAD_PATH.unshift(File.dirname(__FILE__))
 
-print 'Yes, '
+require 'lib/app_controller'
 
-run
+AppController.new.run
